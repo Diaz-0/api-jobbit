@@ -1,8 +1,8 @@
 const mongoose=require("mongoose");
 
 
-const Alumnos=mongoose.Schema({
-    matricula:{
+const Empleados=mongoose.Schema({
+    id_empleados:{
         type:String,
         unique:true
     },
@@ -14,4 +14,4 @@ const Alumnos=mongoose.Schema({
     created_at:Date
 })
 
-module.exports=mongoose.model("Alumno", Alumnos);
+module.exports=mongoose.model("Empleado", Empleados);
