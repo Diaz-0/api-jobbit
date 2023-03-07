@@ -1,8 +1,8 @@
 const mongoose=require("mongoose");
 
 
-const Empleados=mongoose.Schema({
-    id_empleados:{
+const Empleadores=mongoose.Schema({
+    id_empleadores:{
         type:String,
         unique:true
     },
@@ -15,4 +15,4 @@ const Empleados=mongoose.Schema({
     created_at:Date
 })
 
-module.exports=mongoose.model("Empleado", Empleados);
+module.exports=mongoose.model("Empleador", Empleadores);
